@@ -14,55 +14,55 @@
     <p id="description"><b>Please fill out this form with the required information</b></p>
    <form id="survey-form">
         <fieldset>
-            <label>Enter Your Name: <input/></label>
-            <label>Enter Your Email: <input/></label>
-            <label>Time spent playing Diablo 3: <input/></label>
+            <label id="name-label">Enter Your Name: <input id="name" type="text" name="Name" placeholder="Enter your name here" required /></label>
+            <label id="email-label">Enter Your Email: <input id="email" type="email" name="Email" placeholder="Enter your email here" required /></label>
+            <label id="number-label">Time spent playing Diablo 3: <input id="number" name="age" type="number" min="1" max="20" placeholder="Hours"> </label>
         </fieldset>
         <fieldset>
             <label>Do you own DLC?</label>
-            <label><input/>Vanilla only</label>
-            <label><input/>Reaper Of Souls</label>
-            <label><input/>Nekro</label>
-            <label><input/>All of them</label>
+            <label><input type="radio" name="DO" class="inline" value="Submit" />Vanilla only</label>
+            <label><input type="radio" name="DO" class="inline" value="Submit" />Reaper Of Souls</label>
+            <label><input type="radio" name="DO" class="inline" value="Submit" />Nekro</label>
+            <label><input type="radio" name="DO" class="inline" value="Submit" />All of them</label>
         </fieldset>
         <fieldset>
             <label>Which suits your playstyle?</label>
-            <label><input/> PVE</label>
-            <label><input/> PVP</label>
-            <label><input/> SOLO</label>
-            <label><input/> COOP</label>
+            <label><input type="checkbox" name="playstyle" class="inline" value="PVE" /> PVE</label>
+            <label><input type="checkbox" name="playstyle" class="inline" value="PVP" /> PVP</label>
+            <label><input type="checkbox" name="playstyle" class="inline" value="SOLO" /> SOLO</label>
+            <label><input type="checkbox" name="playstyle" class="inline" value="COOP" /> COOP</label>
         </fieldset>
         <fieldset>
             <label>Who is your favorite follower?</label>
-            <label><input/> Templar</label>
-            <label><input/> Scoundrel</label>
-            <label><input/> Enchantress</label>
+            <label><input type="radio" name="Who" class="inline" value="Submit" /> Templar</label>
+            <label><input type="radio" name="Who" class="inline" value="Submit" /> Scoundrel</label>
+            <label><input type="radio" name="Who" class="inline" value="Submit" /> Enchantress</label>
         </fieldset>
         <fieldset>
             <label>What is your favorite class?
                 <select id="dropdown">
-                    <option >(select one)</option>
-                    <option >Demon Hunter</option>
-                    <option >Monk</option>
-                    <option >Warrior</option>
-                    <option >Witch Doctor</option>
-                    <option >Crusader</option>
-                    <option >Sorcorer</option>
+                    <option value="">(select one)</option>
+                    <option value="DH">Demon Hunter</option>
+                    <option value="MO">Monk</option>
+                    <option value="WA">Warrior</option>
+                    <option value="WD">Witch Doctor</option>
+                    <option value="CR">Crusader</option>
+                    <option value="SO">Sorcorer</option>
                 </select>
             </label>
             <label>Are you looking forward to Diablo 4?
                 <select id="dropdown">
-                    <option >(select one)</option>
-                    <option >Nope</option>
-                    <option >Sure</option>
-                    <option >Dont care</option>
+                    <option value="">(select one)</option>
+                    <option value="N">Nope</option>
+                    <option value="S">Sure</option>
+                    <option value="D">Dont care</option>
                 </select>
             </label>
         </fieldset>
         <label>Suggestions
-            <textarea></textarea> 
+            <textarea name="suggestions" rows="3" placeholder="Leave your feedback here..."></textarea> 
         </label>
-        <input/>
+        <input type="submit" value="Submit" id="submit" />
    </form>
 </body>
 
